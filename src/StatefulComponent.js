@@ -1,4 +1,5 @@
 import React from 'react';
+import Services from './Services';
 
 class StatefulComponent extends React.Component {
   constructor() {
@@ -16,11 +17,14 @@ class StatefulComponent extends React.Component {
 
   render() {
     return (
+      <div>
       <button onClick={()=> {
         this.addExclamation();
       }}>
       {this.state.buttonText}
       </button>
+      <Services />
+      </div>
     )
   }
 }
