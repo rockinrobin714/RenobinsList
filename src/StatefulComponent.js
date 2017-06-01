@@ -9,6 +9,7 @@ import Housing from './Housing';
 import Resumes from './Resumes';
 import NavBar from './NavBar';
 import Personals from './Personals';
+import Post from './Post';
 
 class StatefulComponent extends React.Component {
   constructor() {
@@ -32,6 +33,7 @@ class StatefulComponent extends React.Component {
       }}>
       {this.state.buttonText}
       </button>
+      <Post />
       <Services />
       <Jobs />
       <Community />
