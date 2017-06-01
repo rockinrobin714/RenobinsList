@@ -12,8 +12,7 @@ class Post extends React.Component {
       makeManufacturer: '',
       modelNameNumber: '',
       sizeDimensions: '',
-      condition: '',
-      numberOfGuests: 5
+      condition: ''
     };
     this.handleInputChange = this.handleInputChange.bind(this);
   }
