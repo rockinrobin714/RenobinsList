@@ -9,40 +9,27 @@ import Housing from './Housing';
 import Resumes from './Resumes';
 import NavBar from './NavBar';
 import Personals from './Personals';
-import Post from './Post';
+import SubmitPost from './SubmitPost';
 
 class StatefulComponent extends React.Component {
   constructor() {
     super();
-    this.state = {
-      buttonText: "Click me and see what happens"
-    };
-  }
-
-  addExclamation () {
-    this.setState({
-      buttonText: this.state.buttonText + "!"
-    });
+    this.state = {};
   }
 
   render() {
     return (
       <div>
-      <button onClick={()=> {
-        this.addExclamation();
-      }}>
-      {this.state.buttonText}
-      </button>
-      <Post />
-      <Services />
-      <Jobs />
-      <Community />
-      <ForSale />
-      <Forums />
-      <Gigs />
-      <Housing />
-      <Resumes />
-      <Personals />
+        <SubmitPost />
+        <Services />
+        <Jobs />
+        <Community />
+        <ForSale />
+        <Forums />
+        <Gigs />
+        <Housing />
+        <Resumes />
+        <Personals />
       </div>
     )
   }
