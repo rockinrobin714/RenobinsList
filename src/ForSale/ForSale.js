@@ -5,7 +5,9 @@ import Post from './Post';
 class ForSale extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      data = '';
+    }
   }
   render() {
     return <div>
